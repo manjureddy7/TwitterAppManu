@@ -1,0 +1,36 @@
+
+in the command prompt type npm install express --save in order to save the express on node
+
+
+//1. used for installing express on nodejs
+var express=require('express');
+
+
+//2.app uses express now
+var app=express();
+
+//3.the file should be in static public folder in order to run on the desired port ie.the index file should be in public folder
+app.use(express.static('public'));
+
+
+// 4.used for port number and to run on it
+app.listen(3000,function(){
+	console.log("Welcome to _anunirva!!! on 3000");
+});
+
+
+//5. if we are sending some data from server to controller where the controller requests the server for the data
+step1.the controller asks the server
+step2.server sends the data
+step.3 the controller takes the data
+
+
+
+//6.app.get is always used for sending the data to controller.here /detail is the route or say medium between the server adn controller they should always talk through this particular medium only in order to send or recive data from controller
+
+app.get('/detail',function(req, res, next){
+
+	
+});
+
+res.send() is the term used for sendiung the data to controller
